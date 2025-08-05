@@ -1,6 +1,13 @@
 # 多摄像头实时采集与推流系统
 ## 项目简介
-本项目是一个基于Linux的高性能多摄像头实时采集与推流系统，能够同时从多个USB摄像头采集视频流，进行实时图像处理，并将处理后的视频编码推送到RTMP服务器（如Nginx RTMP、SRS等）。系统采用模块化设计，充分利用现代C++特性，实现了高并发、低延迟的视频处理流程。
+本项目是一个基于Linux的高性能多摄像头实时采集与推流系统，能够同时从多个USB摄像头采集视频流，进行实时图像处理，并将处理后的视频编码推送到RTMP服务器（如Nginx RTMP、SRS等）。
+
+## RUN
+    在cmakeLists.txt目录下
+    cmake -S . -B build
+    cmake --build build
+    cd build 
+    ./example_test
 
 ## 核心功能
 多摄像头支持：
